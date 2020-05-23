@@ -1,0 +1,14 @@
+{
+    "require" :{
+        "symfony/console": "2.6.7",
+        "leafo/scssphp": "^0.8.4"
+    },
+    "autoload": {
+      "classmap": [
+        "commands/say.php",
+        "commands/make.php",
+        "commands/theme.php",
+        "commands/compile.php"
+      ]
+    }
+}
