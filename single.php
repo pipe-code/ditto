@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main id="ditto_single">
+<main id="ditto-single">
 	<section>
 		<p>- Default single -</p>
 	</section>

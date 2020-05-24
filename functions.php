@@ -4,7 +4,8 @@
  */
 function ditto_scripts() {
   wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css' );
+  wp_enqueue_style( 'main-styles', get_template_directory_uri() . '/css/main.css' );
+  wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'ditto_scripts');
 

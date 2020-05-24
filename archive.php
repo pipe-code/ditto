@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main id="ditto_archive">
+<main id="ditto-archive">
 	<section>
 		<p>- Default archive -</p>
 	</section>

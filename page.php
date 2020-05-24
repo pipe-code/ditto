@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main id="ditto_page">
+<main id="ditto-page">
 	<section>
 		<p>- Default page -</p>
 	</section>

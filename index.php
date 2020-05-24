@@ -12,6 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main id="ditto_index"></main>
+<main id="ditto-index">
+	<?= get_template_part('partials/hello') ?>
+</main>
 
 <?php get_footer(); ?>
