@@ -12,15 +12,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <footer id="footer-wrapper">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                © Ditto Theme <?= date('Y') ?>
-            </div>
-        </div>
+        © Ditto Theme <?= date('Y') ?>
     </div>
 </footer>
 
 </div> <!-- -Page container -->
+
 <?php wp_footer(); ?>
 </body>
 </html>

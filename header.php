@@ -21,6 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
   <meta name="viewport" content="width=device-width">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php wp_head(); ?>
+  <script>
+    const _dittoURI_ = "<?= get_template_directory_uri() ?>",
+          _dittoURL_ = "<?= get_site_url() ?>";
+  </script>
 </head>
 
 <body <?php body_class(); ?>>
