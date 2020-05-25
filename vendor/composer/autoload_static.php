@@ -124,7 +124,9 @@ class ComposerStaticInit1a432374427d75df6bb65b72ebe2953c
         'Symfony\\Component\\Console\\Tests\\Output\\TestOutput' => __DIR__ . '/..' . '/symfony/console/Symfony/Component/Console/Tests/Output/OutputTest.php',
         'Symfony\\Component\\Console\\Tests\\Tester\\ApplicationTesterTest' => __DIR__ . '/..' . '/symfony/console/Symfony/Component/Console/Tests/Tester/ApplicationTesterTest.php',
         'Symfony\\Component\\Console\\Tests\\Tester\\CommandTesterTest' => __DIR__ . '/..' . '/symfony/console/Symfony/Component/Console/Tests/Tester/CommandTesterTest.php',
+        'ThemeDescriptionCommand' => __DIR__ . '/../..' . '/commands/theme.php',
         'ThemeNameCommand' => __DIR__ . '/../..' . '/commands/theme.php',
+        'ThemeVersionCommand' => __DIR__ . '/../..' . '/commands/theme.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

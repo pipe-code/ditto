@@ -11,5 +11,7 @@ $application->add(new GreetCommand());
 $application->add(new MakeTemplateCommand());
 $application->add(new MakePartialCommand());
 $application->add(new ThemeNameCommand());
+$application->add(new ThemeDescriptionCommand());
+$application->add(new ThemeVersionCommand());
 
 $application->run();

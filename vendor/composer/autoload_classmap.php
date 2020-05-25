@@ -113,5 +113,7 @@ return array(
     'Symfony\\Component\\Console\\Tests\\Output\\TestOutput' => $vendorDir . '/symfony/console/Symfony/Component/Console/Tests/Output/OutputTest.php',
     'Symfony\\Component\\Console\\Tests\\Tester\\ApplicationTesterTest' => $vendorDir . '/symfony/console/Symfony/Component/Console/Tests/Tester/ApplicationTesterTest.php',
     'Symfony\\Component\\Console\\Tests\\Tester\\CommandTesterTest' => $vendorDir . '/symfony/console/Symfony/Component/Console/Tests/Tester/CommandTesterTest.php',
+    'ThemeDescriptionCommand' => $baseDir . '/commands/theme.php',
     'ThemeNameCommand' => $baseDir . '/commands/theme.php',
+    'ThemeVersionCommand' => $baseDir . '/commands/theme.php',
 );
