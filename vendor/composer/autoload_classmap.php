@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'GreetCommand' => $baseDir . '/commands/say.php',
     'MakePartialCommand' => $baseDir . '/commands/make.php',
     'MakeTemplateCommand' => $baseDir . '/commands/make.php',
     'Symfony\\Component\\Console\\Application' => $vendorDir . '/symfony/console/Symfony/Component/Console/Application.php',

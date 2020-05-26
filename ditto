@@ -7,7 +7,6 @@ use Symfony\Component\Console\Application;
 $application = new Application();
 
 # Commands
-$application->add(new GreetCommand());
 $application->add(new MakeTemplateCommand());
 $application->add(new MakePartialCommand());
 $application->add(new ThemeNameCommand());

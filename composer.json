@@ -4,7 +4,6 @@
     },
     "autoload": {
       "classmap": [
-        "commands/say.php",
         "commands/make.php",
         "commands/theme.php"
       ]

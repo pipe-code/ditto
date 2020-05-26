@@ -12,7 +12,7 @@ class MakeTemplateCommand extends Command {
     protected $commandName = 'make:template';
     protected $commandDescription = "Make a WordPress Template";
 
-    protected $commandArgumentName = "name";
+    protected $commandArgumentName = "template name";
     protected $commandArgumentDescription = "What name will your template have?";
 
     protected function configure() {
@@ -59,7 +59,7 @@ class MakePartialCommand extends Command {
     protected $commandName = 'make:partial';
     protected $commandDescription = "Make a WordPress partial";
 
-    protected $commandArgumentName = "name";
+    protected $commandArgumentName = "partial name";
     protected $commandArgumentDescription = "What name will your partial have?";
 
     protected function configure() {
