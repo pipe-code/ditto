@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <footer id="footer-wrapper">
     <div class="container">
-        © Ditto Theme <?= date('Y') ?>
+        <p>© Ditto Theme <?= date('Y') ?></p>
     </div>
 </footer>
 

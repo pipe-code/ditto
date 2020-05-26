@@ -14,7 +14,9 @@ get_header();
 
 <main id="ditto_404_error">
 	<section>
-		<p>- 404 Error -</p>
+		<div class="container">
+			<p>[404 Error]</p>
+		</div>
 	</section>
 </main>
 

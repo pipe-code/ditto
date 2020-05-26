@@ -14,7 +14,9 @@ get_header();
 
 <main id="ditto-single">
 	<section>
-		<p>- Default single -</p>
+		<div class="container">
+			<p>[Default single]</p>
+		</div>
 	</section>
 </main>
 

@@ -14,7 +14,9 @@ get_header();
 
 <main id="ditto-page">
 	<section>
-		<p>- Default page -</p>
+		<div class="container">
+			<p>[Default page]</p>
+		</div>
 	</section>
 </main>
 

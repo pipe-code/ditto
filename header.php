@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           </div>
         <?php endif; ?>
         <div class="main-menu">
-          <div class="hamburguer">
+          <div class="hamburguer" onclick="ditto.menu(this)">
             <span></span>
             <span></span>
             <span></span>

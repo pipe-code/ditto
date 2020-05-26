@@ -1,4 +1,24 @@
 .hello-partial {
+    .text {
+        margin: 40px 0px;
+    }
+    .theme-credits {
+        margin: 20px 0px;
+        a {
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+    i.pipe-code {
+        background-image: url('../images/pipe-code-logo.svg');
+        height: 40px;
+        width: 38px;
+        display: inline-block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+    }
     svg {
         display: block;
         width: calc(100% - 60px);
@@ -34,7 +54,6 @@
     .st2{
         fill:#f8f8f8;
     }
-
     @keyframes ditto-anim {
         0% {visibility: visible;}
         25% {visibility: hidden;}

@@ -14,7 +14,9 @@ get_header();
 
 <main id="ditto-archive">
 	<section>
-		<p>- Default archive -</p>
+		<div class="container">
+			<p>[Default archive]</p>
+		</div>
 	</section>
 </main>
 

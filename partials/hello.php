@@ -30,7 +30,21 @@ if ( ! defined( 'ABSPATH' ) ) {
             <path id="Shine3" class="st2" d="M227,121v30h-30v16h-31v-31h31v-15H227z"/>
             <path id="Shine4" class="st2" d="M121,91v15h15v30h-30v-15H91V91H121z"/>
         </svg>
+        <div class="text">
+            <h2>Getting Started</h2>
+            <ul>
+                <li>Run php ditto theme:name to rename theme.</li>
+                <li>Add NMP packages and Composer packages to start your project.</li>
+                <li>Run npx webpack -p (for production) or -d (for development) to start compile.</li>
+                <li>Run php ditto for more shortcuts.</li>
+            </ul>
+        </div>
+        <div class="theme-credits">
+            <a href="https://pipe-code.github.io/" target="_blank">
+                <i class="pipe-code"></i>
+                <span>A PIPE:CODE Theme</span>
+            </a>
+        </div>
     </div>
-    <!-- https://codepen.io/Thor1192/pen/ZOQqZB -->
 </section>
                     
