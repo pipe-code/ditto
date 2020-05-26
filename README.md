@@ -1,7 +1,7 @@
 Ditto v1.0
 =====
 
-> Wordpress theme for developers, has composer, nodejs and webpack pre configured.
+> Wordpress theme for developers with composer, nodejs and webpack pre configured.
 
 ## Getting Started
 
