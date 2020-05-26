@@ -52,3 +52,9 @@ function ditto_login_styles() { ?>
   </script>
 <?php }
 add_action( 'login_enqueue_scripts', 'ditto_login_styles' );
+
+/**
+ * Disable Gutenberg
+ */
+// add_filter('use_block_editor_for_post', '__return_false', 10);
+// add_filter('use_block_editor_for_post_type', '__return_false', 10);
