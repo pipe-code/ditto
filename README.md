@@ -1,12 +1,14 @@
-Ditto v2.0
+Ditto v1.0
 =====
 
-> A simple WordPress theme with php assistant.
+> Wordpress theme for developers, has composer, nodejs and webpack pre configured.
 
 ## Getting Started
 
-* 
-*
+* Run php ditto theme:name to rename theme.
+* Add NMP packages and Composer packages to start your project.
+* Run npx webpack -p (for production) or -d (for development) to start compile.
+* Run php ditto for more shortcuts.
 
 ----
 
