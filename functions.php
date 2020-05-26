@@ -25,8 +25,10 @@ add_action( 'init', 'ditto_navigation_menus' );
  */
 add_theme_support( 'custom-logo' );
 
-/*** +Login Styles ***/
-function custom_theme_login_styles() { ?>
+/**
+ * Login Styles
+ */
+function ditto_login_styles() { ?>
   <style type="text/css">
     body {
       background-color: #222 !important;
@@ -49,4 +51,4 @@ function custom_theme_login_styles() { ?>
     });
   </script>
 <?php }
-add_action( 'login_enqueue_scripts', 'custom_theme_login_styles' );
+add_action( 'login_enqueue_scripts', 'ditto_login_styles' );
