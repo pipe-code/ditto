@@ -13,6 +13,7 @@ Ditto v1.0
 ----
 
 Ditto is released under the [MIT License](https://opensource.org/licenses/MIT).
+
 A [PIPE:CODE](https://pipe-code.github.io/) Theme
 
 © Ditto 2020
