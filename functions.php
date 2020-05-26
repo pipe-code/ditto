@@ -24,3 +24,29 @@ add_action( 'init', 'ditto_navigation_menus' );
  * Theme support
  */
 add_theme_support( 'custom-logo' );
+
+/*** +Login Styles ***/
+function custom_theme_login_styles() { ?>
+  <style type="text/css">
+    body {
+      background-color: #222 !important;
+    }
+    #login h1 a, .login h1 a {
+      display: none;
+    }
+    #login h1 img {
+      width: 100%;
+      max-width: 240px;
+      max-height: 180px;
+    }
+  </style>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      let loginImg = document.createElement("img");
+        loginImg.src = "<?= get_template_directory_uri() ?>/images/pipe-code-logo.svg";
+        loginImg.alt = "WordPress login image";
+        document.querySelector('#login h1').appendChild(loginImg);
+    });
+  </script>
+<?php }
+add_action( 'login_enqueue_scripts', 'custom_theme_login_styles' );
