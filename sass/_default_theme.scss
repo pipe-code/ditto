@@ -32,8 +32,9 @@ body {
                             padding: 0px;
                             list-style: none;
                             li {
-                                display: inline-block;
+                                display: table;
                                 margin-right: 10px;
+                                margin-bottom: 10px;
                                 &:last-of-type {
                                     margin-right: 0px;
                                 }
@@ -74,7 +75,8 @@ body {
                                     bottom: 0px;
                                 }
                             }
-                            & + .main-menu-list {
+                            & + .main-menu-list,
+                            & + .menu-main-menu-container .main-menu-list {
                                 position: fixed;
                                 right: 0px;
                                 top: 0;
@@ -112,7 +114,8 @@ body {
                                         left: 50%;
                                     }
                                 }
-                                & + .main-menu-list {
+                                & + .main-menu-list,
+                                & + .menu-main-menu-container .main-menu-list {
                                     width: 300px;
                                     opacity: 1;
                                 }

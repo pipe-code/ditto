@@ -4,7 +4,7 @@ module.exports = {
     entry: './js/main.js',
     output: {
         path: __dirname + '/js',
-        filename: 'main.min.js'
+        filename: 'bundle.js'
     },
 
     module: {
@@ -26,7 +26,7 @@ module.exports = {
 
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '../css/main.css'
+            filename: '../css/bundle.css'
         })
     ],
 
