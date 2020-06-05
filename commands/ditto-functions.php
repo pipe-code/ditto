@@ -3,11 +3,12 @@ namespace Ditto\Functions;
 
 class Content {
     static function Template($name) {
+        $tag = 'Template Name';
         $output =   "   
 <?php
 /**
  * 
- * Template Name: ".$name."
+ * {$tag}: {$name}
  * 
  */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,6 +21,7 @@ get_header();
                     ";
 		return $output;
     }
+    
     static function Partial($name) {
         $output =   "   
 <?php
