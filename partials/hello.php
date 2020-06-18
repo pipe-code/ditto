@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <ul>
                 <li>Run php ditto theme:name to rename theme.</li>
                 <li>Add NMP packages and Composer packages to start your project.</li>
-                <li>Run npx webpack -p (for production) or -d (for development) to start compile.</li>
+                <li>Run npm run prod (for production), npm run dev (for development) or npm run watch (for watch mode) to start compile.</li>
                 <li>Run php ditto for more shortcuts.</li>
             </ul>
         </div>

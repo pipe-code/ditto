@@ -7,7 +7,7 @@ Ditto v1.0
 
 * Run php ditto theme:name to rename theme.
 * Add NMP packages and Composer packages to start your project.
-* Run npx webpack -p (for production) or -d (for development) to start compile.
+* Run npm run prod (for production), npm run dev (for development) or npm run watch (for watch mode) to start compile.
 * Run php ditto for more shortcuts.
 
 ----
