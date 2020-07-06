@@ -2,7 +2,7 @@
 namespace Ditto\Functions;
 
 class Content {
-    static function Template($name) {
+    static function Template($name, $randomHash) {
         $tag = 'Template Name';
         $output =   "   
 <?php
@@ -16,13 +16,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 get_header();
 ?>
-<main id=".'"'.Convert::Slug($name).'-template"'."></main>
+<main id=".'"'.Convert::Slug($name).'-template-'.$randomHash.'"'."></main>
 <?php get_footer(); ?>
                     ";
 		return $output;
     }
     
-    static function Partial($name) {
+    static function Partial($name, $randomHash) {
         $output =   "   
 <?php
 /**
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 ?>
-<section class=".'"'.Convert::Slug($name).'-partial"'."></section>
+<section class=".'"'.Convert::Slug($name).'-partial-'.$randomHash.'"'."></section>
                     ";
 		return $output;
 	}

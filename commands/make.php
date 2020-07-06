@@ -27,20 +27,21 @@ class MakeTemplateCommand extends Command {
     }
     protected function execute(InputInterface $input, OutputInterface $output) {
         $templateName = $input->getArgument($this->commandArgumentName);
+        $randomHash = bin2hex(random_bytes(3));
 
         if ($templateName) {
             
             $fileName = Functions\Convert::Slug($templateName).'-template';
             if(!is_file('templates/'.$fileName.'.php')){
-                $contents = Functions\Content::Template($templateName);
+                $contents = Functions\Content::Template($templateName, $randomHash);
                 file_put_contents('templates/'.$fileName.'.php', $contents);
                 $output->writeln($fileName.'.php created.');
                 if(!is_file('sass/templates/'.$fileName.'.scss')){
-                    file_put_contents('sass/templates/_'.$fileName.'.scss', '#'.Functions\Convert::Slug($templateName).'-template {}');
+                    file_put_contents('sass/templates/_'.$fileName.'.scss', '#'.Functions\Convert::Slug($templateName).'-template-'.$randomHash.' {}');
                     $mainSASS = file('sass/main.scss');
                     foreach ($mainSASS as $key => $line) {
                         if(strpos($line, '#DittoTemplates')) {
-                            $mainSASS[$key] = '// #DittoTemplates'."\n".'@import "templates/'.$fileName.'";'."\n";
+                            $mainSASS[$key] = '// #DittoTemplates'."\n".'@import "./templates/'.$fileName.'";'."\n";
                         }
                     }
                     file_put_contents('sass/main.scss', $mainSASS);
@@ -74,20 +75,20 @@ class MakePartialCommand extends Command {
     }
     protected function execute(InputInterface $input, OutputInterface $output) {
         $partialName = $input->getArgument($this->commandArgumentName);
-
+        $randomHash = bin2hex(random_bytes(3));
         if ($partialName) {
             
             $fileName = str_replace(' ', '', $partialName);
             if(!is_file('partials/'.$fileName.'.php')){
-                $contents = Functions\Content::Partial($partialName);
+                $contents = Functions\Content::Partial($partialName, $randomHash);
                 file_put_contents('partials/'.$fileName.'.php', $contents);
                 $output->writeln('partials/'.$fileName.'.php created.');
                 if(!is_file('sass/partials/'.$fileName.'.scss')){
-                    file_put_contents('sass/partials/_'.$fileName.'.scss', '.'.Functions\Convert::Slug($partialName).'-partial {}');
+                    file_put_contents('sass/partials/_'.$fileName.'.scss', '.'.Functions\Convert::Slug($partialName).'-partial-'.$randomHash.' {}');
                     $mainSASS = file('sass/main.scss');
                     foreach ($mainSASS as $key => $line) {
                         if(strpos($line, '#DittoPartials')) {
-                            $mainSASS[$key] = '// #DittoPartials'."\n".'@import "partials/'.$fileName.'";'."\n";
+                            $mainSASS[$key] = '// #DittoPartials'."\n".'@import "./partials/'.$fileName.'";'."\n";
                         }
                     }
                     file_put_contents('sass/main.scss', $mainSASS);
