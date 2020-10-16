@@ -1,4 +1,9 @@
 <?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 /**
  * Register Theme Scripts
  * https://developer.wordpress.org/reference/hooks/wp_enqueue_scripts/
@@ -59,5 +64,5 @@ add_action( 'login_enqueue_scripts', 'ditto_login_styles' );
 /**
  * Disable Gutenberg
  */
-// add_filter('use_block_editor_for_post', '__return_false', 10);
-// add_filter('use_block_editor_for_post_type', '__return_false', 10);
+add_filter('use_block_editor_for_post', '__return_false', 10);
+add_filter('use_block_editor_for_post_type', '__return_false', 10);

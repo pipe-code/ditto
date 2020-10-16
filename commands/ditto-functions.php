@@ -27,7 +27,7 @@ get_header();
 <?php
 /**
  * 
- * Partial Name: ".$name."
+ * Partial Name: {$name}
  * 
  */
 if ( ! defined( 'ABSPATH' ) ) {
