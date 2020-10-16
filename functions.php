@@ -62,6 +62,15 @@ function ditto_login_styles() { ?>
 add_action( 'login_enqueue_scripts', 'ditto_login_styles' );
 
 /**
+ * Install latest jQuery version 3.5.1
+ */
+if (!is_admin()) {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"), false);
+	wp_enqueue_script('jquery');
+}
+
+/**
  * Disable Gutenberg
  */
 add_filter('use_block_editor_for_post', '__return_false', 10);
