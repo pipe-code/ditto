@@ -6,9 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'MakePartialCommand' => $baseDir . '/commands/make.php',
-    'MakeTemplateCommand' => $baseDir . '/commands/make.php',
-    'ThemeDescriptionCommand' => $baseDir . '/commands/theme.php',
-    'ThemeNameCommand' => $baseDir . '/commands/theme.php',
-    'ThemeVersionCommand' => $baseDir . '/commands/theme.php',
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "995a2a6207caf3a5e7cadac89103042d",
-    "packages": [
+    "content-hash": "367fc170b91cff87b0f1b61cba3cb22b",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "symfony/console",
             "version": "v2.6.7",
@@ -62,15 +63,18 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/console/tree/v2.6.7"
+            },
             "time": "2015-05-02T15:18:45+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }

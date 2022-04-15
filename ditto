@@ -1,16 +1,66 @@
-#!/usr/bin/env php
 <?php
-require __DIR__ . '/vendor/autoload.php';
+
+require_once __DIR__ . "/vendor/autoload.php";
 
 use Symfony\Component\Console\Application;
-
 $application = new Application();
 
+
 # Commands
-$application->add(new MakeTemplateCommand());
-$application->add(new MakePartialCommand());
-$application->add(new ThemeNameCommand());
-$application->add(new ThemeDescriptionCommand());
-$application->add(new ThemeVersionCommand());
+
+$application->add( 
+    new Ditto\RegisterCommand(
+        "make:template",
+        "Make a WordPress Template.",
+        "template name",
+        "What name will your template have?"
+    )
+);
+
+$application->add( 
+    new Ditto\RegisterCommand(
+        "make:partial",
+        "Make a WordPress partial.",
+        "partial name",
+        "What name will your partial have?"
+    )
+);
+
+$application->add( 
+    new Ditto\RegisterCommand(
+        "theme:name",
+        "Change the theme name.",
+        "Name",
+        "What name will the theme have?"
+    )
+);
+
+$application->add( 
+    new Ditto\RegisterCommand(
+        "theme:uri",
+        "Change the theme directory name.",
+        "Name",
+        "What name will the theme directory have?"
+    )
+);
+
+$application->add( 
+    new Ditto\RegisterCommand(
+        "theme:description",
+        "Change the theme description.",
+        "Description",
+        "What description will the theme have?"
+    )
+);
+
+$application->add( 
+    new Ditto\RegisterCommand(
+        "theme:version",
+        "Change the theme version.",
+        "version",
+        "What version will the theme have?"
+    )
+);
+
 
 $application->run();

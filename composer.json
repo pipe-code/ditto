@@ -1,11 +1,12 @@
 {
-    "require" :{
-        "symfony/console": "2.6.7"
+  "name": "pipecode/ditto",
+  "autoload": {
+    "psr-4": {
+      "Ditto\\": "DittoActions/"
     },
-    "autoload": {
-      "classmap": [
-        "commands/make.php",
-        "commands/theme.php"
-      ]
-    }
+    "files": []
+  },
+  "require-dev" :{
+    "symfony/console": "2.6.7"
+  }
 }

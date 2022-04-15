@@ -4,8 +4,22 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitffcc9763b2ecdb21dc1802db71b8437e
+class ComposerStaticInit7399bcd29a37d4cab4e458d15f3f0baf
 {
+    public static $prefixLengthsPsr4 = array (
+        'D' => 
+        array (
+            'Ditto\\' => 6,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Ditto\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/DittoActions',
+        ),
+    );
+
     public static $prefixesPsr0 = array (
         'S' => 
         array (
@@ -17,18 +31,16 @@ class ComposerStaticInitffcc9763b2ecdb21dc1802db71b8437e
     );
 
     public static $classMap = array (
-        'MakePartialCommand' => __DIR__ . '/../..' . '/commands/make.php',
-        'MakeTemplateCommand' => __DIR__ . '/../..' . '/commands/make.php',
-        'ThemeDescriptionCommand' => __DIR__ . '/../..' . '/commands/theme.php',
-        'ThemeNameCommand' => __DIR__ . '/../..' . '/commands/theme.php',
-        'ThemeVersionCommand' => __DIR__ . '/../..' . '/commands/theme.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixesPsr0 = ComposerStaticInitffcc9763b2ecdb21dc1802db71b8437e::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitffcc9763b2ecdb21dc1802db71b8437e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7399bcd29a37d4cab4e458d15f3f0baf::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7399bcd29a37d4cab4e458d15f3f0baf::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7399bcd29a37d4cab4e458d15f3f0baf::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit7399bcd29a37d4cab4e458d15f3f0baf::$classMap;
 
         }, null, ClassLoader::class);
     }

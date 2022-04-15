@@ -1,0 +1,16 @@
+<?php
+/**
+ * 
+ * Partial Name: -%partial-name%-
+ * 
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
+?>
+
+<section class="-%class%-">
+
+</section>
